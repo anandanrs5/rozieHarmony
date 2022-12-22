@@ -1,0 +1,12 @@
+.head_img{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.head_img h3{
+    position: relative;
+    right: 260px;
+}
+.head_img img{
+    margin: 10px 15px 10px 15px;
+}

@@ -1,0 +1,14 @@
+.main{
+    position: relative;
+ 
+}
+.status{
+    position: relative;
+   bottom: 40px;
+    left:700px;
+}
+.info{
+    position: relative;
+    bottom: 20px;
+}
+

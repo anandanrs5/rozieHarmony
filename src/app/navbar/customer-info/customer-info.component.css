@@ -1,0 +1,53 @@
+Li{
+    float: left;
+    list-style: none;
+    padding: 3px;
+    width: 150px;
+    text-align: center;
+    font-size: 13px;
+}
+#mob,#email{
+    border-left: 1px solid #c6c3e7;
+    width:190px;
+}
+#email{
+    border-right: 1px solid #c6c3e7;  
+}
+#head{
+ margin-left: 85px;   
+}
+.pr_i{
+    padding: 16px;
+    background-color: rgba(234, 243, 247, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 10px; 
+}
+#same,#cs{
+    margin-left: 25px;
+}
+
+#same{
+    margin-right: 20px;
+}
+.viewbtn{
+    border: none;
+    color: rgb(164, 164, 194);
+    background-color: white;
+    font-size: small;
+}
+.viewbtn:hover{
+ background-color: #edecf3;
+}
+.viewbtn a{
+    text-decoration: none;
+}
+.pr_i_auth{
+    padding: 14px;
+    background-color: #544AD8;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 10px; 
+}

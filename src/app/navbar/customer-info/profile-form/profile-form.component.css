@@ -1,0 +1,200 @@
+.overview{
+    margin-top: 25px;
+}
+.pr-formGroup{
+    display: grid;
+    justify-content: center;
+}
+.pro-formGroup{
+   background-color:#f5f7fa;
+}
+.form-group-100{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    row-gap: 20px;
+    column-gap: 50px;
+    justify-content: center;
+    padding: 20px;
+}
+.form-group select,.phone-formGroup select{
+    border:1px solid#c6c3e7;
+    padding: 6px;
+    border-radius: 4px; 
+    margin-bottom: 10px;
+ } 
+.form-group input,.phone-formGroup input{
+    border:1px solid #c6c3e7;;
+    padding: 6px;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 10px;
+}
+label{
+    margin-bottom: 10px;
+}
+input[type="text"],input[type="email"],input[type="date"],select{
+    width: 300px;
+} 
+.phone-formGroup select{
+    border:1px solid#c6c3e7;
+    padding: 6px;
+    border-radius: 4px; 
+    margin-bottom: 10px;
+    width: 100px;
+ } 
+ .phone-formGroup-100{
+    display: grid;
+    justify-content: center;
+ }
+ .phone-formGroup-90{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    background-color: #f5f7fa; 
+    padding: 10px;   
+ }
+ .phone-formGroup{
+    justify-content: center;
+    margin-left: 30px;
+ }
+ .phone-formGroup input{
+    width: 200px;
+    margin-left: 10px;
+ }
+ .as-form-group{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    
+ }
+ .addr-form-group{
+    justify-content: center;
+    /* margin-left: 25px; */
+ }
+ .address-form-group{
+    background-color: #f5f7fa;
+    display: grid;
+    grid-template-columns: repeat(3,360px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 50px;
+}
+.addr-form-group select,.addr-form-group input,.addr-form-group textarea{
+    border: 1px solid #c6c3e7;
+    border-radius: 5px;
+    padding: 6px;
+}
+.addr-form-group:nth-child(1){
+    grid-column: span 3;
+}
+.addr-form-group:nth-child(2) textarea,.addr-form-group:nth-child(3) textarea{
+    width: 300px;
+}
+/* .represtative-form-group{
+    width: 100%;
+    background-color: #1e10c0;
+    display: grid;
+    justify-content: center;
+   
+} */
+.repres-form-group{
+    width: 100%;
+    
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.rep-form-group{
+    display: grid;
+    padding: 20px;
+    background-color:#f5f7fa;
+    grid-template-columns:repeat(5,1fr);
+    gap:30px;
+
+}
+.rep-form-group input{
+    width: 100px;
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 6px;
+}
+.btn-save{
+    width: 80px;
+    background-color: #544AD8;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+}
+.btn-cnl{
+    width: 80px;
+    background-color: #bbbbbb;;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+   
+}
+@media screen and (max-width:1045px){
+    .form-group-100,.address-form-group{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;  
+        justify-content: center;     
+    }
+    .phone-formGroup-90 {
+        display: grid;
+        grid-template-columns: 120px 120px 120px;  
+        justify-content: center;  
+    }
+    .form-group select,.form-group input ,.addr-form-group input,.addr-form-group select
+   {
+    width: 150px;
+     }
+     .phone-formGroup input, .phone-formGroup select{
+        width: 80px;
+         }
+         .address-form-group .addr-form-group textarea{
+            width: 150px;
+         }
+     }
+
+     @media screen and (max-width:750px){
+        .form-group-100{
+                display: grid;
+                grid-template-columns: 350px;  
+                justify-content: center; 
+                margin-left: 20px;    
+            }
+            .address-form-group{
+              
+                display: grid;
+                grid-template-columns: 130px 130px 130px;  
+                justify-content: center; 
+                
+                  
+            }
+            .as-form-group ,.as-form-group h5{
+                width: 100%;
+                display: grid; 
+                justify-content: center;
+                
+            }
+            .form-group select,.form-group input{
+            width: 300px;
+             } 
+             .addr-form-group input,.addr-form-group select , .address-form-group .addr-form-group textarea{
+                width: 80px;
+             }
+             .address-form-group .addr-form-group .font-10{
+                     font-size: 0.6rem;
+            }
+            .rep-form-group{
+                width: 100%;
+                display: grid;
+                grid-template-columns:repeat(3,1fr);       
+            }
+            
+
+            }
+

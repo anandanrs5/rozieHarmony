@@ -1,0 +1,85 @@
+
+.sidenav{
+    position: relative;
+}
+.ulist{
+    display: block;
+    transform: translateX(-20px);
+}
+.ulist li{
+  padding: 10px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+.lis{
+    background-color: rgba(216, 216, 224, 0.3);
+    padding: 12px;
+    border-radius: 5px;
+}
+.arrow-r , .arrow-fr{
+    margin-left: 8px;
+    background-color:rgb(46, 54, 134);
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top :500px;  
+}
+.r-logo{
+    margin-left: 20px;
+    }
+nav div{
+        margin-top:25px;
+        margin-bottom: 20px;
+    }
+span{
+    color: white;
+    margin-left: 15px;
+}
+.side{
+ background-color:   #544AD8;
+width: 235px;
+ height: 100vh;
+ position: absolute;
+
+ 
+}
+ .ulist li:nth-child(4){
+    position: absolute;
+    top:400px;
+}
+.hide{
+   display: none; 
+}
+.whole{
+    background-color: rgb(68, 7, 236);
+    width: 85px;
+    height: 100vh;
+}
+.arrow-r{
+    position: absolute;
+    top :500px;
+    left:210px;
+    }
+.show{
+        display: inline-block;
+    }
+.fr-show{
+    display: inline-block;
+    }
+.fr-hide{
+    display: none;
+    }
+.r-show{
+        display: none;
+    }
+.r-hide{
+    display: inline-block;
+   }
+   .rozie{
+    font-size:25px;
+    font-weight: 500;
+    font-family: sans-serif;
+   
+   }

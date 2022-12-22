@@ -1,0 +1,28 @@
+.retr{
+    padding: 9px;
+    background-color: #544AD8;
+ border: none;
+    border-radius: 4px;
+    width:140px;
+    color: white;
+   
+}
+.send{
+   padding: 7px;
+    background-color: #544AD8;
+    border:2px solid  #544AD8;
+    border-radius: 4px;
+    width:100px;
+    color: white;
+    margin-left: 15px;
+}
+.inp{
+    padding: 7px;
+    border-radius: 4px;
+    border:1px solid  #c6c3e7;
+    width:210px;
+    margin: 0px 20px 0px 10px  ;
+}
+span{
+    font-weight: bold;
+}

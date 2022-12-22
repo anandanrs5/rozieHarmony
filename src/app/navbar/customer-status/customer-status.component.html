@@ -1,0 +1,12 @@
+<div class="stsbar">
+  <select  name="status" class="lang" multiplesize>
+   <option ><button >ENG</button></option>
+   <option ><button >FRN</button></option>
+  </select>
+  {{userName}}
+  <select [(ngModel)]="selected_data" class="login" (click)="selected()">
+        <option *ngFor="let s of status" [value]="s" >
+        {{s}}
+    </option>
+ </select>
+</div>

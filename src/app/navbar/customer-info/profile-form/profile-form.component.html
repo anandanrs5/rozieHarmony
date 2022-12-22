@@ -1,0 +1,154 @@
+<div class="">
+    <div class="overview">
+        <app-overview ></app-overview>
+        <button class="btn-cnl" (click)="cancel()">cancel</button>
+       
+    </div>
+    
+    <div class="">
+        <form [formGroup]="customerInformation" >
+            <div class="pr-formGroup">
+                <h5 style="margin: 20px 0px 0px 20px">Profile </h5>
+                <div class="pro-formGroup">
+                    <div class="form-group-100" formGroupName="profile" >
+                        
+                            <div class="form-group">
+                                <label>Title</label><br>
+                                <select formControlName="title">
+                                    <option value="please select">---please selelct--</option>
+                                    <option value="MR">MR</option>
+                                    <option value="MRS">MRS</option>
+                                    <option value="MISS">MISS</option>
+                                </select>
+                            </div>
+                           <div class="form-group" >
+                                <label>Last Name</label><br>
+                                <input type="text" formControlName="lastname">
+                            </div>
+                            <div class="form-group-radio">
+                                <label >Prefered Language</label><br>
+                                <input type="radio" name="language" value="English" formControlName="language">&nbsp;&nbsp;English
+                                <input type="radio" name="language" value="French" formControlName="language">&nbsp;&nbsp;French
+                            </div>                            
+                            <div class="form-group">
+                                <label>First Name</label><br>
+                                <input type="text" formControlName="firstname">
+                            </div>
+                            <div class="form-group">
+                                <label>Gender</label><br>
+                                  <select name="" id="" formControlName="Gender">
+                                     <option value="Male">Male</option>
+                                     <option value="Female">Female</option>
+                                     <option value="Choose to not disclose">Choose to not disclose</option>
+                                  </select>
+                            </div>
+                             <div class="form-group">
+                                 <label>Date of Birth</label><br>
+                                 <input type="date" formControlName="dob"> 
+                             </div>
+                            <div class="form-group">
+                                <label>Middle Name</label><br>
+                                <input type="text" formControlName="middlename">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label><br>
+                                <input type="text" placeholder="webca#gmail.com" formControlName="email">
+                            </div>
+                            <div class="form-group">
+                                <label>IVR Pin Status</label><br>
+                                <input type="text" formControlName="ivr_pin_status">
+                            </div>
+                     
+                   </div>
+                </div>
+            </div>
+            <!-- <div class="ph-formGroup">
+               <div class="">
+                    <div class="phone-formGroup-100" formGroupName="phone">
+                        <h5>One of the phone number is Mandatory with Country code</h5>
+                        <div class="phone-formGroup-90">
+                            <div class="phone-formGroup">
+                                <label for="">Mobile Number</label><br>
+                                <select name="" id="" formControlName="m_countrycode">
+                                    <option [value]="m" *ngFor="let m of mobile_country_code">{{m}}</option>
+                                </select>
+                                <input type="text" formControlName="mobilenumber">
+                            </div>
+                            <div class="phone-formGroup">
+                                <label for="">Home Number</label><br>
+                                <select name="" id="" formControlName="h_countrycode">
+                                    <option [value]="m" *ngFor="let m of mobile_country_code">{{m}}</option>
+                                </select>
+                                <input type="text" formControlName="homenumber">
+                            </div>
+                            <div class="phone-formGroup">
+                                <label for="">Office Number</label><br>
+                                <select name="" id="" formControlName="o_countrycode">
+                                    <option [value]="m" *ngFor="let m of mobile_country_code">{{m}}</option>
+                                </select>
+                                <input type="text" formControlName="officenumber">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="as-form-group">
+                        <h5 >Address Information</h5> 
+                        <div class="address-form-group" formGroupName="address">
+                                <div class="addr-form-group">
+                                    <input  type="radio" formControlName="choose" name="choose" value="home">
+                                    <label for="">Home</label>
+                                    <input  type="radio" formControlName="choose" name="choose" value="business" style="margin-left:20px ;">
+                                    <label for="">Business</label>
+                                </div>
+                                <div class="addr-form-group">
+                                    <label for="" >Address Line1 </label><br>
+                                    <textarea formControlName="address1"></textarea>
+                                </div>
+                                 <div class="addr-form-group">
+                                    <label for="" class="font-10">Address Line2(Optional)</label><br>
+                                    <textarea formControlName="address2"></textarea>
+                                 </div>
+                                 <div class="addr-form-group">
+                                    <label for="">City</label><br>
+                                    <input type="text" formControlName="city" > 
+                               </div>
+                                <div class="addr-form-group">
+                                 <label for="">Province/State</label><br>
+                                 <select name="" id="" formControlName="state" >
+                                         <option value=""></option>
+                                 </select>
+                                </div>
+                                <div class="addr-form-group">
+                                    <label for="">Postal/ZipCode</label><br>
+                                    <input type="text" formControlName="zipcode"> 
+                               </div>
+                                <div class="addr-form-group">
+                                     <label for="">Country</label><br>
+                                     <select name="" id="" formControlName="country">
+                                          <option value=""></option>
+                                     </select>
+                                </div>
+                                <div class="addr-form-group">
+                                    <label for="">Company Name</label>
+                                    <input type="text" formControlName="company">
+                                </div>
+                        </div>     
+                    </div> -->
+               <!-- <div class="representatives-form-group">
+                    <div class="repres-form-group"> -->
+                        <!-- <h5>Representative(Optional)</h5>
+                        <div class="rep-form-group" formGroupName="representative">
+                             <input type="text" name="" id="" placeholder="MRT s" formControlName="MRT">
+                             <input type="text" name="" id="" placeholder="Representatives" formControlName="repo1">
+                             <input type="text" name="" id="" placeholder="Representatives" formControlName="repo2">
+                             <input type="text" name="" id="" placeholder="Representatives" formControlName="repo3">
+                             <input type="text" name="" id="" placeholder="Representatives" formControlName="repo4">
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <button class="btn-save" (click)="save()">save</button> -->
+            <button (click)="save()">save</button>
+        </form>
+    </div>
+</div> 

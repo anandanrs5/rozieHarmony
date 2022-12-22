@@ -1,0 +1,45 @@
+nav ul li {
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+li:hover{
+    border-bottom: 5px solid #544ad8;
+    color:#544ad8;
+}
+.notes{
+    float: right;
+    border:1px solid rgba(222, 209, 235,0.4);
+    width: 350px;
+    height: 76vh;
+}
+#fwd{
+    background-color: #544ad8;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.des{
+    background-color: rgb(235, 235, 245);
+    width:300px;
+    height: 12px;
+    border-radius: 10px;
+}
+.des1{
+    background-color: rgb(235, 235, 245);
+    width:70px;
+    height: 12px;
+    border-radius: 10px;
+}
+.des2{
+    background-color: rgb(235, 235, 245);
+    width:150px;
+    height: 12px;
+    border-radius: 10px;
+}
+.main{
+    width:550px;
+    height: 77vh;
+    border:1px solid rgba(205, 178, 233,0.3);
+}
