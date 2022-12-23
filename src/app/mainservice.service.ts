@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Customer } from './model/Customer.model';
+import {  CustomerProfile } from './model/customerProfile'
 @Injectable({
   providedIn: 'root'
 })
@@ -14,7 +15,6 @@ constructor() { }
       DOB:string, IVR_pin_Sts:string,
       )
       {
-      const customer=new Customer;
       this.authUser.id=customer_id;
       this.authUser.name=customer_name;
       this.authUser.email=customer_email;
@@ -25,27 +25,13 @@ constructor() { }
       this.authUser.Address=Address;
       this.authUser.DOB=DOB;
      this.authUser.IVR_pin_Sts=IVR_pin_Sts;
-      //
-      //
+      
     }
       authendicatedUser()
       {
       return this.authUser;
     }
-    profileData:{}={
-      profile:
-      {title   :'', lastname:'',language:'',firstname:'',
-      middlename:'',Gender:'',dob:'',ivr_pin_status:'',email:''}
-  }
-    saveDataInServive(customerInformation:any){
-      this.profileData=customerInformation;
-      // console.log(customerInformation.value.profile.lastname);
-      this.profileData=customerInformation.value.profile.title;
-      this.profileData=customerInformation.value.profile.firstname;
-      this.profileData=customerInformation.value.profile.Gender;
-      
-
-    }
+    
 
   customerList=[
     {id:'114091648',name:'Mathew',email:'mathew123@gmail.com',ph_no:'12344466'

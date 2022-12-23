@@ -2,7 +2,7 @@
     <div class="overview">
         <app-overview ></app-overview>
         <button class="btn-cnl" (click)="cancel()">cancel</button>
-       
+        <button (click)="save()">save</button>
     </div>
     
     <div class="">
@@ -62,7 +62,7 @@
                    </div>
                 </div>
             </div>
-            <!-- <div class="ph-formGroup">
+            <div class="ph-formGroup">
                <div class="">
                     <div class="phone-formGroup-100" formGroupName="phone">
                         <h5>One of the phone number is Mandatory with Country code</h5>
@@ -91,8 +91,8 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <!-- <div class="as-form-group">
+            </div>
+            <div class="as-form-group">
                         <h5 >Address Information</h5> 
                         <div class="address-form-group" formGroupName="address">
                                 <div class="addr-form-group">
@@ -134,10 +134,10 @@
                                     <input type="text" formControlName="company">
                                 </div>
                         </div>     
-                    </div> -->
-               <!-- <div class="representatives-form-group">
+                    </div>
+               <div class="representatives-form-group">
                     <div class="repres-form-group"> -->
-                        <!-- <h5>Representative(Optional)</h5>
+                        <h5>Representative(Optional)</h5>
                         <div class="rep-form-group" formGroupName="representative">
                              <input type="text" name="" id="" placeholder="MRT s" formControlName="MRT">
                              <input type="text" name="" id="" placeholder="Representatives" formControlName="repo1">
@@ -146,9 +146,7 @@
                              <input type="text" name="" id="" placeholder="Representatives" formControlName="repo4">
                         </div>
                     </div>
-                </div> -->
-                <!-- <button class="btn-save" (click)="save()">save</button> -->
-            <button (click)="save()">save</button>
+                </div>
         </form>
     </div>
 </div> 

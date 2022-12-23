@@ -9,7 +9,4 @@ Gender      !:string;
 Address     !:string;
 DOB         !:string;
  IVR_pin_Sts !:string;
-// 
-// 
-// 
 }

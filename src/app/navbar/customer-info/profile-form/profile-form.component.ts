@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, NgForm } from '@angular/forms';
 import { MainserviceService } from 'src/app/mainservice.service';
+import { ProfileService } from 'src/app/profile.service';
 
 @Component({
   selector: 'app-profile-form',
@@ -9,7 +10,7 @@ import { MainserviceService } from 'src/app/mainservice.service';
 })
 export class ProfileFormComponent implements OnInit {
 
-  constructor(private service :MainserviceService) { }
+  constructor(private service :ProfileService) { }
   customerInformation!:FormGroup<any>;
 
   ngOnInit(): void {
@@ -26,31 +27,31 @@ export class ProfileFormComponent implements OnInit {
       ivr_pin_status:new FormControl(null),
       email:new FormControl(null)
       }),
-      // phone:new FormGroup({
-      //   m_countrycode:new FormControl(null),
-      //   h_countrycode:new FormControl(null),
-      //   o_countrycode:new FormControl(null),
-      //   mobilenumber:new FormControl(null),
-      //   homenumber:new FormControl(null),
-      //   officenumber:new FormControl(null)
-      // }),
-      // address:new FormGroup({
-      //   choose:new FormControl(null),
-      //   address1:new FormControl(null),
-      //   address2:new FormControl(null),
-      //   state:new FormControl(null),
-      //   zipcode:new FormControl(null),
-      //   country:new FormControl(null),
-      //   company:new FormControl(null),
-      //   city:new FormControl(null)
-      // }),
-      // representative:new FormGroup({
-      //   MRT:new FormControl(null),
-      //   repo1:new FormControl(null),
-      //   repo2:new FormControl(null),
-      //   repo3:new FormControl(null),
-      //   repo4:new FormControl(null),
-      // })
+      phone:new FormGroup({
+        m_countrycode:new FormControl(null),
+        h_countrycode:new FormControl(null),
+        o_countrycode:new FormControl(null),
+        mobilenumber:new FormControl(null),
+        homenumber:new FormControl(null),
+        officenumber:new FormControl(null)
+      }),
+      address:new FormGroup({
+        choose:new FormControl(null),
+        address1:new FormControl(null),
+        address2:new FormControl(null),
+        state:new FormControl (null),
+        zipcode:new FormControl(null),
+        country:new FormControl(null),
+        company:new FormControl(null),
+        city:new FormControl(null)
+      }),
+      representative:new FormGroup({
+        MRT:new FormControl(null),
+        repo1:new FormControl(null),
+        repo2:new FormControl(null),
+        repo3:new FormControl(null),
+        repo4:new FormControl(null),
+      })
 
       
     })
@@ -60,6 +61,7 @@ export class ProfileFormComponent implements OnInit {
   
   save(){
     // console.log(this.customerInformation.value.profile.firstname); 
+    // console.log(this.customerInformation.value.profile);
     this.service.saveDataInServive(this.customerInformation);
   }
   cancel(){
