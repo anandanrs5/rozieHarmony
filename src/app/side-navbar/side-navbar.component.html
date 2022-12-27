@@ -1,35 +1,48 @@
 <div class="sidenav" >
-    <nav class="side" [ngClass]="{'whole': action==='shrinked','wholeshow': action==='expand'}">
-      <div><a href="#" style="text-decoration: none">
+    <nav class="side" [ngClass]="{'whole': action==='shrinked'}">
+      <div>
+          <a href="#" style="text-decoration:none">
              <img src="./assets/sidenavbar/rozie-icon-logo.svg" class="r-logo">&nbsp; 
-             <span class="rozie" [ngClass]="{'hide': action==='shrinked','show': action==='expand'}">Rozie</span> 
+             <span class="rozie" [ngClass]="{'hide': action==='shrinked'}">Rozie</span> 
           </a>
       </div>
       <ul type="none" class="ulist">
-          <li><a href="#"><img src="./assets/sidenavbar/dashboard.svg" class="lis">
-              <span class="navlink" [ngClass]="{'hide': action==='shrinked' ,'show': action==='expand'}">Dashboard</span>
-              </a> 
+          <li>
+            <a href="#">
+              <img src="./assets/sidenavbar/dashboard.svg" class="lis">
+              <span  [ngClass]="{'hide': action==='shrinked'}">Dashboard</span>
+            </a> 
           </li>
-          <li><a href="#"><img src="./assets/sidenavbar/profile.svg" class="lis">
-            <span class="navlink" [ngClass]="{'hide': action==='shrinked', 'show': action==='expand'}">Profile</span> 
-              </a> 
+          <li>
+            <a href="#">
+              <img src="./assets/sidenavbar/profile.svg" class="lis">
+              <span  [ngClass]="{'hide': action==='shrinked'}">Profile</span> 
+            </a> 
           </li>
-          <li><a href="#"><img src="./assets/sidenavbar/admin.svg" class="lis">
-            <span class="navlink" [ngClass]="{'hide': action==='shrinked' ,'show': action==='expand'}">Admin</span>
-              </a>
+          <li>
+            <a href="#">
+              <img src="./assets/sidenavbar/admin.svg" class="lis">
+              <span  [ngClass]="{'hide': action==='shrinked'}">Admin</span>
+            </a>
           </li>
-          <li><a href="#"><img src="./assets/sidenavbar/file-download.svg" class="lis">
-            <span class="navlink" [ngClass]="{'hide': action==='shrinked' ,'show': action==='expand' }">Logs</span>
-              </a>
+          <li>
+            <a href="#">
+              <img src="./assets/sidenavbar/file-download.svg" class="lis">
+              <span [ngClass]="{'hide': action==='shrinked'}">Logs</span>
+            </a>
           </li>
-          <li  (click)="responsive('expand') "><a href="#">
-            <img src="./assets/sidenavbar/arrow-fr.svg" class="arrow-fr" 
-            [ngClass]="{'fr-show': arrow==false , 'fr-hide':arrow==true }"></a>
+          <li (click)="responsive('shrinked')">
+            <a href="#">
+              <img src="./assets/sidenavbar/arrow-r.svg" class="arrow-r"
+                  [ngClass]="{'r-show': arrow==false , 'r-hide':arrow==true }"></a>
           </li>
-          <li (click)="responsive('shrinked')"><a href="#">
-            <img src="./assets/sidenavbar/arrow-r.svg" class="arrow-r"
-            [ngClass]="{'r-show': arrow==false , 'r-hide':arrow==true }"></a>
+          <li  (click)="responsive('expand') ">
+            <a href="#">
+                <img src="./assets/sidenavbar/arrow-fr.svg" class="arrow-fr" 
+                  [ngClass]="{'fr-show': arrow==false , 'fr-hide':arrow==true }">
+            </a>
           </li>
+          
       </ul>
     </nav>
 </div>

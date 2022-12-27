@@ -11,11 +11,11 @@ export class SideNavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  action!:string;
-  arrow:boolean=true;
+  action:string='shrinked';
+  arrow:boolean=false;
 
    responsive(param:string){
-    this.action=param;
-   this.arrow=!this.arrow;
+      this.action=param;
+      this.arrow=!this.arrow;
     }
 }

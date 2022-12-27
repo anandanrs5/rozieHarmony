@@ -1,85 +1,66 @@
-
-.sidenav{
-    position: relative;
-}
 .ulist{
     display: block;
-    transform: translateX(-20px);
+    transform: translateX(-25px);
 }
 .ulist li{
-  padding: 10px;
+    padding: 10px;
 }
 li a{
     color: white;
     text-decoration: none;
 }
 .lis{
-    background-color: rgba(216, 216, 224, 0.3);
-    padding: 12px;
-    border-radius: 5px;
+    background-color: #655cdc;
+    padding: 11px;
+    border-radius: 8px;
 }
 .arrow-r , .arrow-fr{
     margin-left: 8px;
-    background-color:rgb(46, 54, 134);
+    background-color:#423ab4;
     padding: 5px;
     border-radius: 5px;
     position: absolute;
-    top :500px;  
+    top :520px;  
 }
 .r-logo{
-    margin-left: 20px;
+    margin-top:10px;
+    margin-left: 14px;
     }
 nav div{
-        margin-top:25px;
-        margin-bottom: 20px;
+   
+    margin-bottom: 20px;
     }
 span{
     color: white;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 .side{
- background-color:   #544AD8;
-width: 235px;
- height: 100vh;
- position: absolute;
-
- 
+    background-color:   #544AD8;
+    width: 235px;
+    height: 100vh;
 }
- .ulist li:nth-child(4){
+.ulist li:nth-child(4){
     position: absolute;
-    top:400px;
-}
-.hide{
-   display: none; 
+    top:430px;
 }
 .whole{
-    background-color: rgb(68, 7, 236);
-    width: 85px;
-    height: 100vh;
+    background-color: #544AD8;
+            width   : 70px;
+            height  : 100vh;
 }
 .arrow-r{
     position: absolute;
-    top :500px;
+    top :520px;
     left:210px;
     }
-.show{
-        display: inline-block;
-    }
-.fr-show{
+.fr-show,.r-hide{
     display: inline-block;
     }
-.fr-hide{
+.r-show,.fr-hide,.hide{
     display: none;
     }
-.r-show{
-        display: none;
-    }
-.r-hide{
-    display: inline-block;
-   }
-   .rozie{
+.rozie{
     font-size:25px;
     font-weight: 500;
     font-family: sans-serif;
-   
    }
