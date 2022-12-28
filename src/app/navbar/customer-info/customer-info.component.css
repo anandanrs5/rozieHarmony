@@ -1,35 +1,42 @@
-Li{
-    float: left;
-    list-style: none;
-    padding: 3px;
-    width: 150px;
-    text-align: center;
-    font-size: 13px;
+.main{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    /* gap: 15px; */
 }
-#mob,#email{
-    border-left: 1px solid #c6c3e7;
-    width:190px;
+.image{
+    grid-row:1/3 ;
+  margin-right: 10px;
+   }
+.info{
+    font-size: small;
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: repeat(5,180px);
+    gap: 10px;
+    /* margin-right: 40px; */
 }
 #email{
-    border-right: 1px solid #c6c3e7;  
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    text-align: center;
 }
-#head{
- margin-left: 85px;   
+#mobile{
+     border-left: 1px solid gray;
+     text-align: center;
+}
+.customername{
+    /* margin-left: 40px; */
 }
 .pr_i{
     padding: 16px;
-    background-color: rgba(234, 243, 247, 0.6);
+    background-color: rgba(222, 231, 235, 0.6);
     border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: 10px; 
 }
-#same,#cs{
-    margin-left: 25px;
-}
-
-#same{
-    margin-right: 20px;
+.pr_i_auth{
+    padding: 16px;
+    background-color: #544AD8;
+    border-radius: 50%;   
 }
 .viewbtn{
     border: none;
@@ -42,12 +49,4 @@ Li{
 }
 .viewbtn a{
     text-decoration: none;
-}
-.pr_i_auth{
-    padding: 14px;
-    background-color: #544AD8;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: 10px; 
 }
