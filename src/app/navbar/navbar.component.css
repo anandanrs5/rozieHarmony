@@ -10,8 +10,20 @@
 } */
 
 .main{
-    display: grid;
-    grid-template-columns: 680px 500px;
-    justify-content:space-between ;
-   
+    display: flex;
+    position: relative;  
+}
+.child2{
+position: fixed;
+left:950px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.info{
+    position: absolute;
+    right: 170px;
+    top:20px;
 }

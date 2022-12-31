@@ -5,7 +5,23 @@
     width: 1350px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+}
+.navbar{
+position: absolute;
+top:5px;
+left:0px;
 }
 .left-section{
-    flex-grow: 1;
+    position: absolute;
+    top:150px;
+    left:2px;
+
 }
+.right-section{
+    position: fixed;
+    top:150px;
+    left:800px;
+
+}
+

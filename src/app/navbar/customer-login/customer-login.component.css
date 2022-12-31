@@ -1,27 +1,29 @@
-.retr{
-    padding: 7px;
-    background-color: #544AD8;
-    border: none;
-    border-radius: 4px;
-    width:140px;
-    color: white;
+.main{
+    display: flex;
+    align-items: baseline;
 }
-.send{
-    padding: 7px;
-    background-color: #544AD8;
-    border-radius: 4px;
-    border: none;
-    width:100px;
-    color: white;
-    margin-left: 15px;
-}
-.inp{
-    padding: 7px;
+.title{
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 5px;
+  } 
+  .inp{
+    padding: 6px;
     border-radius: 4px;
     border:1px solid  #c6c3e7;
-    width:210px;
-    margin: 0px 20px 0px 10px  ;
+    width:264px;
+  }
+  .retr,.send{
+    padding: 6px;
+    background-color: #544AD8;
+    border: none;
+    border-radius: 4px;
+    width:127px;
+    color: white;
+    margin-left: 10px;
 }
-span{
-    font-weight: bold;
+    .send{
+    width:117px;
+    margin-left: 15px; 
 }
+
