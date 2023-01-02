@@ -1,21 +1,32 @@
-.profile{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    background-color:rgb(245,247,250);
-    margin: 10px;
-    
+.information{
+    display: grid;
+    grid-template-columns: repeat(5,minmax(100px,250px)) ;
+     background-color:rgb(245,247,250);
+     border-radius: 5px;
+     padding: 20px;
 }
-.profile p{
-    margin: 10px;
-    /* background-color: rgb(175, 175, 230); */
-    width: 180px;
+.information p{
+    color:  #475258;
+    border-right: 1px solid  #d0d4d6;
+    padding: 10px 0px 0px 25px;
+    font-weight: 500;
 }
 .main{
-    width: 90%;
+    width: 95%;
+    margin: auto;
     resize: horizontal;
-    /* margin: auto; */
-    /* background-color: aqua; */
     overflow: hidden;
 }
+div span{
+    font-weight: 500;
+    color: #475258;
+}
+.title{
+    display: flex;
+   margin: 10px 0px;
+}
+.credit-container .information {
+    display: flex;
+    gap:20px;
+    }
 

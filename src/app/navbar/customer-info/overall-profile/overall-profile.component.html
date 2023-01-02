@@ -1,31 +1,89 @@
 <div class="main">
     <app-overview class="overview"></app-overview>
-    <div class="">
-        <h2>Profile</h2>
-        <div class="profile">
-            <p>Aeroplan Number  : <br>{{customerInfo.id}}</p>
-            <p>Mobile Number    : <br>{{customerInfo.ph_no}}</p>
-            <p>Language Preference :<br>{{customerInfo.Lang_Pref}}</p>
-            <p>Home Number      : </p>
-            <p>Business Number  : </p>
-            <p>Date of Birth    : <br>{{customerInfo.DOB}}</p>
-            <p>Gender Male      : <br>{{customerInfo.Gender}}</p>
-            <p>IVR PIn Status   : <br>{{customerInfo.IVR_pin_Sts}}</p>
-            <p>Address          : <br>{{customerInfo.Address}}</p>
+        <div class="profile-container">
+            <div class="title">
+            <div class=""><img src="./assets/navbar/customer-info/profile.svg" class="">&nbsp;</div>
+            <div class=""><span >Profile</span></div>
+            </div>
+            <div class="information">
+                <p>Aeroplan Number  : <br>{{customerInfo.id}}</p>
+                <p>Mobile Number    : <br>{{customerInfo.ph_no}}</p>
+                <p>Language Preference :<br>{{customerInfo.Lang_Pref}}</p>
+                <p>Home Number      : </p>
+                <p style="border: none;">Business Number  : </p>
+                <p>Date of Birth    : <br>{{customerInfo.DOB}}</p>
+                <p>Gender Male      : <br>{{customerInfo.Gender}}</p>
+                <p>IVR PIn Status   : <br>{{customerInfo.IVR_pin_Sts}}</p>
+                <p  style="border: none;">Address          : <br>{{customerInfo.Address}}</p>
+            </div>
         </div>
-        <!-- <p>Details : {{profileDetails.profile.title}} </p> -->
-    </div>
-     <!-- <div class="">
-        Profile
-        <span>{{customerInfo.name}}</span>
-
-    </div> -->
- 
-        
-    
-    <!-- <div class="">
-        Member Status
-    </div>
+        <div class="member-container">
+           <div class="title">
+            <div class=""><img src="./assets/navbar/customer-info/memsts.svg" class="">&nbsp;</div>
+            <div class="">Member Status</div>
+           </div> 
+           <div class="information">
+                <p>Membership    : <br>{{"Active"}}</p>
+                <p>Account       : <br>{{"Active"}}</p>
+                <p>Login         : <br>{{"Active"}}</p>
+                <p>Million Miles : <br>{{"No"}}</p>
+                <p  style="border: none;">Tier  : <br> E35K</p>
+           </div>
+        </div>
+        <div class="fs-container">
+            <div class="title">
+             <div class=""><img src="./assets/navbar/customer-info/memsts.svg" class="">&nbsp;</div>
+             <div class="">Family Sharing</div>
+            </div> 
+            <div class="information">
+                 <p>Role          : <br>{{"Not Applicable"}}</p>
+                 <p>Pool Status   : <br>{{"Not Applicable"}}</p>
+                 <p>Invite Status : <br>{{"Not Applicable"}}</p>
+                 <p  style="border: none;">Join Date     : <br>{{"Not Applicable"}}</p>
+            </div>
+         </div>
+         <div class="credit-container">
+            <div class="title">
+                <div class=""><img src="./assets/navbar/customer-info/credit.svg" class="">&nbsp;</div>
+             <div class="">Credit Card</div>
+            </div> 
+            <div class="information">
+                <img src="./assets/navbar/customer-info/TD.svg" class="">
+                <img src="./assets/navbar/customer-info/CIBC.svg" class="">
+                <img src="./assets/navbar/customer-info/amex.svg" class="">
+                <img src="./assets/navbar/customer-info/chase.svg" class="">
+            </div>
+         </div>
+         <div class="balance-container">
+            <div class="title">
+                <div class=""><img src="./assets/navbar/customer-info/balance.svg" class="">&nbsp;</div>
+                <div class="">Balance</div>
+            </div> 
+                <div class="information">
+                    <p>Redeem Points  : <br>{{"0"}}</p>
+                    <p>Total SQM      : <br>{{"0"}}</p>
+                    <p>Total SQD      : <br>{{"5000"}}</p>
+                    <p>Total SQs      : <br>{{"0"}}</p>
+                    <p  style="border: none;">Total EDQ      : <br>{{"0"}}</p>
+                    <p>Pool Balance   : <br>{{"0"}}</p>
+                    <p  style="border: none;">Points Expiring In :<br>{{"-"}}</p>
+               </div>
+         </div>
+         <div class="repres-container">
+            <div class="title">
+                <div class=""><img src="./assets/navbar/customer-info/balance.svg" class="">&nbsp;</div>
+                <div class="">Representatives</div>
+            </div> 
+                <div class="information">
+                    <p>Representative 1   : <br>{{"MRS Test IBE Test"}}</p>
+                    <p>Representative 2   : <br>{{"Test2 Test"}}</p>
+                    <p>Representative 3   : <br>{{"5000"}}</p>
+                    <p>Representative 4   : <br>{{"0"}}</p>
+                    <p  style="border: none;">Representative 5   : <br>{{"0"}}</p>
+                    <p  style="border: none;">Secret Passphrase  : <br>{{"Summer is not here"}}</p>
+               </div>
+         </div>      
+    <!-- 
     <div class="">
         Family Sharing
     </div>

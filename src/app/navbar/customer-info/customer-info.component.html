@@ -34,9 +34,10 @@
         <img src="./assets/navbar/customer-login/mis_c.svg" >&nbsp;&nbsp;
         <span *ngIf=" customersInfo.name ===''">Country Code </span>
         {{customersInfo.country_code}}
-        </div>
         <span *ngIf=" customersInfo.name !==''"><button class="viewbtn" >
           <a routerLink="/viewmore" >View More</a> </button></span>
+        </div>
+        
   </div>
 
 </div>

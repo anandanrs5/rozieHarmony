@@ -1,21 +1,11 @@
-/* 
-.status{
-    position: relative;
-   bottom: 40px;
-    left:700px;
-}
-.info{
-    position: relative;
-    bottom: 20px;
-} */
-
 .main{
     display: flex;
-    position: relative;  
+    position: relative; 
+    justify-content: baseline; 
 }
 .child2{
-position: fixed;
-left:950px;
+    position: fixed;
+    left:980px;
 }
 .container{
     display: flex;

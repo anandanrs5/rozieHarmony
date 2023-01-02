@@ -23,21 +23,17 @@ li a{
     top :520px;  
 }
 .r-logo{
-    margin-top:10px;
+    margin-top:5px;
     margin-left: 14px;
     }
-nav div{
-   
-    margin-bottom: 20px;
+    .side div span{
+    color: white;  
+    margin-top: 20px;  
     }
-span{
-    color: white;
-    margin-left: 10px;
-}
 .side{
     background-color:   #544AD8;
-    width: 235px;
-    height: 100vh;
+    width: 220px;
+    min-height  : 100vh;
 }
 .ulist li:nth-child(4){
     position: absolute;
@@ -45,13 +41,13 @@ span{
 }
 .whole{
     background-color: #544AD8;
-            width   : 70px;
-            height  : 100vh;
-}
+    width   : 70px;
+    min-height  : 100vh;
+}           
 .arrow-r{
     position: absolute;
     top :520px;
-    left:210px;
+    left:200px;
     }
 .fr-show,.r-hide{
     display: inline-block;
