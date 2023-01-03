@@ -7,20 +7,20 @@
             </div>
             <div class="information">
                 <p>Aeroplan Number  : <br>{{customerInfo.id}}</p>
-                <p>Mobile Number    : <br>{{customerInfo.ph_no}}</p>
-                <p>Language Preference :<br>{{customerInfo.Lang_Pref}}</p>
-                <p>Home Number      : </p>
+                <p>Mobile Number    : <br>{{profileDetails.phone.mobilenumber}}</p>
+                <p>Language Preference :<br>{{profileDetails.profile.language}}</p>
+                <p>Home Number      : <br> {{profileDetails.phone.homenumber}}</p>
                 <p style="border: none;">Business Number  : </p>
-                <p>Date of Birth    : <br>{{customerInfo.DOB}}</p>
-                <p>Gender Male      : <br>{{customerInfo.Gender}}</p>
-                <p>IVR PIn Status   : <br>{{customerInfo.IVR_pin_Sts}}</p>
-                <p  style="border: none;">Address          : <br>{{customerInfo.Address}}</p>
+                <p>Date of Birth    : <br>{{profileDetails.profile.dob}}</p>
+                <p>Gender           : <br>{{profileDetails.profile.Gender}}</p>
+                <p>IVR PIn Status   : <br>{{profileDetails.profile.ivr_pin_status}}</p>
+                <p  style="border: none;">Address          : <br>{{profileDetails.address}}</p>
             </div>
         </div>
         <div class="member-container">
            <div class="title">
             <div class=""><img src="./assets/navbar/customer-info/memsts.svg" class="">&nbsp;</div>
-            <div class="">Member Status</div>
+            <div class=""><span>Member StatusA</span></div>
            </div> 
            <div class="information">
                 <p>Membership    : <br>{{"Active"}}</p>
@@ -33,7 +33,7 @@
         <div class="fs-container">
             <div class="title">
              <div class=""><img src="./assets/navbar/customer-info/memsts.svg" class="">&nbsp;</div>
-             <div class="">Family Sharing</div>
+             <div class=""><span>Family Sharing</span></div>
             </div> 
             <div class="information">
                  <p>Role          : <br>{{"Not Applicable"}}</p>
@@ -83,17 +83,4 @@
                     <p  style="border: none;">Secret Passphrase  : <br>{{"Summer is not here"}}</p>
                </div>
          </div>      
-    <!-- 
-    <div class="">
-        Family Sharing
-    </div>
-    <div class="">
-        Credit Card
-    </div>
-    <div class="">
-        Balance
-    </div>
-    <div class="">
-        Representatives
-    </div> -->
 </div>

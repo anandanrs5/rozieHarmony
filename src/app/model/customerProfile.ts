@@ -10,5 +10,5 @@ export class CustomerProfile{
             {choose:'',address1:'',address2:'',state:'',
             zipcode:'',country:'',company: '',city:''  }
             
-        }
+        } 
 
