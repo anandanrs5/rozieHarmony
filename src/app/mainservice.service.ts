@@ -6,7 +6,8 @@ import {  CustomerProfile } from './model/customerProfile'
 })
 export class MainserviceService {
 constructor() { }
-  username='Anandan';  
+  username='Anandan';
+    
   authUser:Customer={ id:'',name:'',email:'',ph_no:'',country_code:'',
                       Lang_Pref:'',Gender:'',Address:'',DOB:'',IVR_pin_Sts:'' };
 

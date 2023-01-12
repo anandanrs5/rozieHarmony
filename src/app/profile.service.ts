@@ -1,5 +1,15 @@
 import { Injectable } from '@angular/core';
 import { CustomerProfile } from './model/customerProfile';
+export interface profileInf{
+title           :string;
+firstname       :string;
+lastname        :string;
+middlename      :string;
+Gender          :string;
+language        :string;
+dob             :string;
+ivr_pin_status  :string;
+}
 @Injectable({
   providedIn: 'root'
 })
@@ -17,6 +27,17 @@ export class ProfileService {
         { choose:'',   address1:'', address2:'',state:'',zipcode:'',
           country:'',  company:''  ,city:''}
     }
+    data:profileInf={
+      title           :'',
+      firstname       :'',
+      lastname        :'',
+      middlename      :'',
+      Gender          :'',
+      language        :'',
+      dob             :'',
+      ivr_pin_status  :'',
+    }
+    dataArr:profileInf[]=[];
   saveDataInServive(customerInformation:any){
     //profile information
     this.profileData.profile.title       = customerInformation.value.profile.title;
@@ -44,6 +65,17 @@ this.profileData.profile.ivr_pin_status  = customerInformation.value.profile.ivr
     this.profileData.address.country     = customerInformation.value.address.country;
     this.profileData.address.state       = customerInformation.value.address.state;
     this.profileData.address.zipcode     = customerInformation.value.address.zipcode;
+
+    this.data.title            =customerInformation.value.profile.title;
+    this.data.firstname        =customerInformation.value.profile.firstname;
+    this.data.Gender           =customerInformation.value.profile.Gender;
+    this.data.lastname         = customerInformation.value.profile.lastname;
+    this.data.middlename       = customerInformation.value.profile.middlename;
+    this.data.Gender           = customerInformation.value.profile.Gender;
+    this.data.language         = customerInformation.value.profile.language;
+    this.data.dob              = customerInformation.value.profile.dob;
+    this.data.ivr_pin_status   = customerInformation.value.profile.ivr_pin_status;
+    this.dataArr.push(this.data);
   }
 }
 

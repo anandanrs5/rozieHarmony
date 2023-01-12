@@ -1,49 +1,61 @@
 <div class="sidenav" >
-    <nav class="side" [ngClass]="{'whole': action==='shrinked'}">
-      <div>
+    <nav>
+      <div class="container side" [ngClass]="{'whole': action==='shrinked'}">
+          <div class="menu">
+          <div class="app-title">
           <a href="#" style="text-decoration:none">
-             <img src="./assets/sidenavbar/rozie-icon-logo.svg" class="r-logo" style="margin-bottom: 10px;">&nbsp; 
-             <span class="rozie" [ngClass]="{'hide': action==='shrinked'}">Rozie</span> 
-          </a>
-      </div>
-      <ul type="none" class="ulist">
-          <li>
-            <a href="#">
-              <img src="./assets/sidenavbar/dashboard.svg" class="lis">&nbsp;
-              <span  [ngClass]="{'hide': action==='shrinked'}">Dashboard</span>
-            </a> 
-          </li>
-          <li>
-            <a href="#">
-              <img src="./assets/sidenavbar/profile.svg" class="lis">&nbsp;
-              <span  [ngClass]="{'hide': action==='shrinked'}">Profile</span> 
-            </a> 
-          </li>
-          <li>
-            <a href="#">
-              <img src="./assets/sidenavbar/admin.svg" class="lis">&nbsp;
-              <span  [ngClass]="{'hide': action==='shrinked'}">Admin</span>
+            <div class="align">
+               <img src="./assets/sidenavbar/rozie-icon-logo.svg" class="r-logo">&nbsp; 
+               <span class="rozie" [ngClass]="{'hide':action==='shrinked', 'show':action==='expand'}" >Rozie</span> 
+            </div>
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="option">
+              <div class="option-3">
+                  <div>
+                    <a href="#">
+                      <div class="align">
+                      <img src="./assets/sidenavbar/dashboard.svg" class="lis">&nbsp;
+                      <span class="slow" [ngClass]="{'hide': action==='shrinked'}">Dashboard</span>
+                      </div>
+                    </a> 
+                  </div>
+                  <div>
+                    <a href="#">
+                      <div class="align">
+                      <img src="./assets/sidenavbar/profile.svg" class="lis">&nbsp;
+                      <span  [ngClass]="{'hide': action==='shrinked'}">Profile</span> 
+                   </div>
+                    </a> 
+                  </div>
+                  <div>
+                    <a href="#">
+                    <div class="align">
+                      <img src="./assets/sidenavbar/admin.svg" class="lis">&nbsp;
+                      <span  [ngClass]="{'hide': action==='shrinked'}">Admin</span>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div>
             <a href="#">
-              <img src="./assets/sidenavbar/file-download.svg" class="lis">&nbsp;
-              <span [ngClass]="{'hide': action==='shrinked'}">Logs</span>
+              <div class="align">
+                  <img src="./assets/sidenavbar/file-download.svg" class="lis">&nbsp;
+                  <span [ngClass]="{'hide': action==='shrinked'}">Logs</span>
+              </div>
             </a>
-          </li>
-          <li (click)="responsive('shrinked')">
-            <a href="#">
+              </div>
+          </div>
+          </div>
+          <div (click)="responsive('shrinked')">
               <img src="./assets/sidenavbar/arrow-r.svg" class="arrow-r"
-                  [ngClass]="{'r-show': arrow==false , 'r-hide':arrow==true }"></a>
-          </li>
-          <li  (click)="responsive('expand') ">
-            <a href="#">
-                <img src="./assets/sidenavbar/arrow-fr.svg" class="arrow-fr" 
-                  [ngClass]="{'fr-show': arrow==false , 'fr-hide':arrow==true }">
-            </a>
-          </li>
-          
-      </ul>
+                  [ngClass]="{'r-show': arrow==false , 'r-hide':arrow==true }">
+          </div>
+          <div  (click)="responsive('expand') ">
+            <img src="./assets/sidenavbar/arrow-fr.svg" class="arrow-fr" 
+            [ngClass]="{'fr-show': arrow==false , 'fr-hide':arrow==true }">
+          </div>          
+      </div>
     </nav>
 </div>
 

@@ -54,7 +54,7 @@ export class ProfileFormComponent implements OnInit {
   mobile_country_code=[1246,77,367,94,13627,636,353,484,521,233,177,163,489,838,38383,8,51];
   save(){
     // console.log(this.customerInformation.value.profile.firstname); 
-      console.log(this.customerInformation.value);
+      // console.log(this.customerInformation.value);
       this.service.saveDataInServive(this.customerInformation);
   }
  }

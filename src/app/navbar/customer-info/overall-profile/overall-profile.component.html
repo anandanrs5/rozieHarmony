@@ -1,11 +1,12 @@
 <div class="main">
-    <app-overview class="overview"></app-overview>
+       <app-overview class="overview"></app-overview>
         <div class="profile-container">
             <div class="title">
             <div class=""><img src="./assets/navbar/customer-info/profile.svg" class="">&nbsp;</div>
             <div class=""><span >Profile</span></div>
             </div>
-            <div class="information">
+            <div class="information" >
+                <p *ngFor="let l of Arr">  profileDetails   : <br> {{l.firstname}}</p>
                 <p>Aeroplan Number  : <br>{{customerInfo.id}}</p>
                 <p>Mobile Number    : <br>{{profileDetails.phone.mobilenumber}}</p>
                 <p>Language Preference :<br>{{profileDetails.profile.language}}</p>

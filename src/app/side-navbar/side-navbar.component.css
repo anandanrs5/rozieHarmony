@@ -1,12 +1,37 @@
-.ulist{
-    display: block;
-    transform: translateX(-25px);
+*{
+    margin: 0px;
+    padding: 0px;
 }
-.ulist li{
-    padding: 10px;
+.container{
+    background-color:#544AD8;
+    width: 220px;
+    min-height  : 100vh;
+    transition: 1s;   
 }
-li a{
-    color: white;
+.align{
+    display: flex;
+    flex-direction: row;
+}
+.align span{
+    margin-top: 6px;
+}
+.app-title img{
+    margin: 20px 0px 0px 15px ;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 520px;
+    margin-left: 16px;
+}
+.option-3{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.option-3 a , .option a{
     text-decoration: none;
 }
 .lis{
@@ -15,47 +40,37 @@ li a{
     border-radius: 8px;
 }
 .arrow-r , .arrow-fr{
-    margin-left: 8px;
+    margin-left: 25px;
     background-color:#423ab4;
     padding: 5px;
     border-radius: 5px;
     position: absolute;
-    top :520px;  
+    top :620px;  
+    transition: 1s;  
 }
-.r-logo{
-    margin-top:5px;
-    margin-left: 14px;
-    }
-    .side div span{
-    color: white;  
-    margin-top: 20px;  
-    }
-.side{
-    background-color:   #544AD8;
-    width: 220px;
-    min-height  : 100vh;
-}
-.ulist li:nth-child(4){
-    position: absolute;
-    top:430px;
+.side div span{
+    color: white;    
 }
 .whole{
     background-color: #544AD8;
-    width   : 70px;
+    width       : 70px;
     min-height  : 100vh;
 }           
 .arrow-r{
     position: absolute;
-    top :520px;
-    left:200px;
+    top :620px;
+    left:160px;
     }
 .fr-show,.r-hide{
-    display: inline-block;
+     display: inline-block;
+
     }
 .r-show,.fr-hide,.hide{
     display: none;
     }
 .rozie{
+    position: relative;
+    top:13px;
     font-size:25px;
     font-weight: 500;
     font-family: sans-serif;
