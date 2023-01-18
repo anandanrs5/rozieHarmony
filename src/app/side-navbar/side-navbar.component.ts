@@ -6,16 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-navbar.component.css']
 })
 export class SideNavbarComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit(): void {
   }
-  action:string='shrinked';
+  action:string="shrinked";
   arrow:boolean=false;
 
-   responsive(param:string){
-      this.action=param;
-      this.arrow=!this.arrow;
-    }
+  responsive(param:string){
+    this.action=param;
+    console.log(this.action);
+    this.arrow=!this.arrow;
+  }    
 }
+
+ 

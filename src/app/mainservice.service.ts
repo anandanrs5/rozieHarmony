@@ -31,7 +31,7 @@ constructor() { }
     customerList=[
         {id          :'114091648',name   :'Mathew',email :'mathew123@gmail.com',ph_no  :'12344466',
          country_code:'123426',Lang_Pref :'English',DOB  :'11-2-1970',          Gender :'Male',
-         IVR_pin_Sts :'valid', Address   :'34, 3rd-cross Toronto ,USA'},
+         IVR_pin_Sts :'valid', Address   :'34, 3rd-cross Toronto ,UK'},
 
         {id         :'114091649',    name:'John',   email:'john123@gmail.com',    ph_no:'12334454',
          country_code:'133442',Lang_Pref :'English',  DOB:'11-2-1970',           Gender:'Male',IVR_pin_Sts:'valid',
