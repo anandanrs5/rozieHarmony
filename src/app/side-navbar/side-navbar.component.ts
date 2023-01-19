@@ -15,7 +15,10 @@ export class SideNavbarComponent implements OnInit {
   responsive(param:string){
     this.action=param;
     console.log(this.action);
-    this.arrow=!this.arrow;
+    setTimeout(() => {
+      this.arrow=!this.arrow;
+    }, 70);
+    
   }    
 }
 

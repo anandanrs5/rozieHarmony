@@ -13,12 +13,15 @@ export class CustomerLoginComponent implements OnInit {
    retrieve(customer_id:string){
       this.service.customerList.find( (element)=>{
       if(customer_id===element.id){
-     this.service.authCustomer
+     this.service.authCustomer;
      (element.id,element.name,element.email,element.ph_no,element.country_code,element.Lang_Pref,element.Gender,
       element.Address,element.DOB,element.IVR_pin_Sts)
     }  
     })
   }     
+  
   }
+
+  
 
 
