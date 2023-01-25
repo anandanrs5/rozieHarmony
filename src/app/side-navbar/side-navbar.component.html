@@ -4,47 +4,47 @@
         <div class="menu">
             <div class="app-title">
                 <a href="#" style="text-decoration:none">
-                    <div class="align"  [ngClass]="{'shrink':action==='shrinked','expand':action==='expand'}">
+                    <div class="align"  [ngClass]="{'shrink':action==='shrinked'}">
                         <img src="./assets/sidenavbar/rozie-icon-logo.svg" class="r-logo">&nbsp; 
-                        <span class="rozie" [ngClass]="{'hide':action==='shrinked'}" >Rozie</span> 
+                        <span class="rozie" [ngClass]="{'hide':action==='shrinked'}" style="color: white;">Rozie</span> 
                     </div>
                 </a>
             </div>
             <div class="option">
-            <div class="option-3">
-                <div>
-                  <a href="#">
-                    <div class="align" [ngClass]="{'shrink':action==='shrinked','expand':action==='expand'}">
-                    <img src="./assets/sidenavbar/dashboard.svg" class="lis">&nbsp;
-                    <span class="slow" [ngClass]="{'hide': action==='shrinked','show':action==='expand'}">Dashboard</span>
+                <div class="option-3">
+                    <div>
+                      <a href="#">
+                        <div class="align" [ngClass]="{'shrink':action==='shrinked','expand':action==='expand'}">
+                            <img src="./assets/sidenavbar/dashboard.svg" class="lis">&nbsp;
+                            <span class="slow" [ngClass]="{'hide': action==='shrinked','show':action==='expand'}">Dashboard</span>
+                        </div>
+                      </a> 
                     </div>
-                  </a> 
+                    <div>
+                      <a href="#">
+                        <div class="align" [ngClass]="{'shrink':action==='shrinked','expand':action==='expand'}">
+                            <img src="./assets/sidenavbar/profile.svg" class="lis">&nbsp;
+                            <span  [ngClass]="{'hide': action==='shrinked'}">Profile</span> 
+                        </div>
+                      </a> 
+                    </div>
+                    <div>
+                      <a href="#">
+                      <div class="align" [ngClass]="{'shrink':action==='shrinked','expand':action==='expand'}">
+                            <img src="./assets/sidenavbar/admin.svg" class="lis">&nbsp;
+                            <span  [ngClass]="{'hide': action==='shrinked'}">Admin</span>
+                      </div>
+                      </a>
+                    </div>
                 </div>
                 <div>
-                  <a href="#">
-                    <div class="align" [ngClass]="{'shrink':action==='shrinked','expand':action==='expand'}">
-                    <img src="./assets/sidenavbar/profile.svg" class="lis">&nbsp;
-                    <span  [ngClass]="{'hide': action==='shrinked'}">Profile</span> 
-                 </div>
-                  </a> 
+                    <a href="#">
+                      <div class="align" [ngClass]="{'shrink':action==='shrinked','expand':action==='expand'}">
+                              <img src="./assets/sidenavbar/file-download.svg" class="lis">&nbsp;
+                              <span [ngClass]="{'hide': action==='shrinked'}">Logs</span>
+                      </div>
+                    </a>
                 </div>
-                <div>
-                  <a href="#">
-                  <div class="align" [ngClass]="{'shrink':action==='shrinked','expand':action==='expand'}">
-                    <img src="./assets/sidenavbar/admin.svg" class="lis">&nbsp;
-                    <span  [ngClass]="{'hide': action==='shrinked'}">Admin</span>
-                  </div>
-                  </a>
-                </div>
-            </div>
-            <div>
-          <a href="#">
-            <div class="align" [ngClass]="{'shrink':action==='shrinked','expand':action==='expand'}">
-                <img src="./assets/sidenavbar/file-download.svg" class="lis">&nbsp;
-                <span [ngClass]="{'hide': action==='shrinked'}">Logs</span>
-            </div>
-          </a>
-            </div>
             </div>
         </div>
         <div (click)="responsive('shrinked')">

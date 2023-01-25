@@ -1,6 +1,5 @@
-.main{
+/* .main{
     display: flex;
-    position: relative; 
     justify-content: baseline; 
 }
 .child2{
@@ -10,10 +9,27 @@
 .container{
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 .info{
     position: absolute;
     right: 170px;
     top:20px;
+} */
+.container{
+    background-color: white;
+    padding: 10px 20px;
+}
+.main{
+    display: flex;
+    z-index: 1;
+}
+.shade{
+    background-color: rgb(118, 117, 117);
+    width: 1135px;
+    left: 50px;
+    height: 5px;
+    position: relative;
+    bottom: 5px;
+    z-index: -1;
+    filter: blur(3px);
 }

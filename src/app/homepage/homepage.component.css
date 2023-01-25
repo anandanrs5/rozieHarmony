@@ -3,26 +3,29 @@
     width: 100%;
 }
 .container-right{
-    /* width: 1280px; */
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
 }
 .navbar{
-  
     position: absolute;
     top:5px;
     left:0px;
+    /* flex-grow: 2; */
+    /* box-shadow: 0px 1px 1px rgb(26, 75, 86); */
 }
 .left-section{
     position: absolute;
     top:150px;
     left:2px;
+    display: flex;
 }
 .right-section{
     position: fixed;
     top:150px;
     left:775px;
 }
-
+.info{
+    border: 1px solid red;
+}

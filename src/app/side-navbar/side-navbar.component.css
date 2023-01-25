@@ -69,7 +69,6 @@
     left:160px;
 }
 .r-show,.fr-hide,.hide{
-    transition: 5s;
     display: none;
     }
 .rozie{
