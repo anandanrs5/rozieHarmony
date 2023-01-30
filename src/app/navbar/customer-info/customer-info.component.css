@@ -1,52 +1,67 @@
-.main{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    /* gap: 15px; */
+*{
+    margin: 0px;
+    padding: 0px;
 }
-.image{
-    grid-row:1/3 ;
-  margin-right: 10px;
-   }
+.main{
+    /* margin-top: 10px; */
+    display: flex;
+    column-gap: 5px;  
+}
 .info{
     font-size: small;
-    /* text-align: center; */
-    display: grid;
-    grid-template-columns: repeat(5,180px);
-    gap: 10px;
-    /* margin-right: 40px; */
+    display: flex;
+    padding: 0px 0px 15px 0px;
 }
 #email{
-    border-left: 1px solid gray;
     border-right: 1px solid gray;
+}
+#mobile,#email{
+    border-left: 1px solid gray;
+}
+.padd{
+    padding: 0px 20px;
     text-align: center;
 }
-#mobile{
-     border-left: 1px solid gray;
-     text-align: center;
-}
-.customername{
-    /* margin-left: 40px; */
+.right-info{
+    display: flex;
+    flex-direction: column;
 }
 .pr_i{
-    padding: 16px;
+    margin-right: 5px;
     background-color: rgba(222, 231, 235, 0.6);
     border-radius: 50%;
+    width: 50px;
+    padding:10px 15px 15px 17px;
+    margin-top:3px;
 }
 .pr_i_auth{
-    padding: 16px;
     background-color: #544AD8;
-    border-radius: 50%;   
+    border-radius: 50%;
+    color: white;
+    font-weight: 500;
+    padding: 12px;
+    margin:3px 5px 0px 0px;
+   }
+.right-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 .viewbtn{
     border: none;
-    color: rgb(164, 164, 194);
     background-color: white;
     font-size: small;
+    border-left:1px solid #475258;
+    padding:0px 20px ;
 }
 .viewbtn:hover{
  background-color: #edecf3;
 }
 .viewbtn a{
     text-decoration: none;
+    color: rgb(95, 95, 104);
+}
+.info div span{
+    color: #475258;
+    font-weight: 500;
 }

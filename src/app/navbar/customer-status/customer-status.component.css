@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    width: 380px;
+    width: 370px;
     justify-content: space-between;
     background-color:#F7F6FF ;
     padding: 5px;
@@ -17,7 +17,7 @@
     width: 70px;
     margin-left: 10px;
 } 
-   .login{
+.login{
     background-color:#F7F6FF ;
     border:1px solid white;
     padding: 3px;
@@ -25,6 +25,15 @@
     width: 100px;
 }
 .image{
-    margin: 0px 10px;
+    margin: 0px 30px;
 }
+select{
+    color:#544AD8;
+    font-size: 13px;
+    font-weight: bold;
+    background-color:#F7F6FF ;
+}
+.username{
+    margin-right: 10px;
 
+}

@@ -29,29 +29,29 @@ constructor() { }
   authendicatedUser(){
             return this.authUser;}
     customerList=[
-        {id          :'114091648',name   :'Mathew',email :'mathew123@gmail.com',ph_no  :'12344466',
-         country_code:'123426',Lang_Pref :'English',DOB  :'11-2-1970',          Gender :'Male',
+        {id          :'114091648',name   :'Mathew',email :'mathew123@gmail.com',ph_no :'12344466',
+         country_code:'123426',Lang_Pref :'English',DOB  :'11-2-1970',          Gender:'Male',
          IVR_pin_Sts :'valid', Address   :'34, 3rd-cross Toronto ,UK'},
 
-        {id         :'114091649',    name:'John',   email:'john123@gmail.com',    ph_no:'12334454',
-         country_code:'133442',Lang_Pref :'English',  DOB:'11-2-1970',           Gender:'Male',IVR_pin_Sts:'valid',
-         Address    :'34, 3rd-cross Toronto ,USA'},
-
-        {id          :'114091650',  name:'Max',     email:'max123@gmail.com',    ph_no:'12222222',
-         country_code:'174252',Lang_Pref:'English',   DOB:'11-2-1970',          Gender:'Male',IVR_pin_Sts:'valid', 
+        {id          :'114091649',   name:'John',   email:'john123@gmail.com',   ph_no:'12334454',
+         country_code:'133442',Lang_Pref :'English',  DOB:'11-2-1970',          Gender:'Male',IVR_pin_Sts:'valid',
          Address     :'34, 3rd-cross Toronto ,USA'},
 
-        {id          :'114091651',  name:'Josh',    email:'josh123@gmail.com',   ph_no:'11112222',
-        country_code :'134000',Lang_Pref:'English',   DOB:'11-2-1970',          Gender:'Male',IVR_pin_Sts:'valid', 
-        Address:'34, 3rd-cross Toronto ,USA'},
+        {id          :'114091650',   name:'Max',    email:'max123@gmail.com',     ph_no:'12222222',
+         country_code:'174252', Lang_Pref:'English',  DOB:'11-2-1970',           Gender:'Male',IVR_pin_Sts:'valid', 
+         Address     :'34, 3rd-cross Toronto ,USA'},
 
-        {id         :'114091652',   name:'Tony',    email:'Tony@gmail.com',      ph_no:'44442222',
-        country_code:'134111', Lang_Pref:'English',   DOB:'11-2-1970',          Gender:'Male',IVR_pin_Sts:'valid',
-         Address:'34, 3rd-cross Toronto ,USA'},
+        {id          :'114091651',   name:'Josh',   email:'josh123@gmail.com',    ph_no:'11112222',
+        country_code :'134000', Lang_Pref:'English',  DOB:'11-2-1970',           Gender:'Male',IVR_pin_Sts:'valid', 
+        Address      :'34, 3rd-cross Toronto ,USA'},
 
-        {id         :'114091653',   name:'James',   email:'James@gmail.com',     ph_no:'33331111',
-        country_code:'134222', Lang_Pref:'English',   DOB:'11-2-1970',          Gender:'Male',IVR_pin_Sts:'valid',
-        Address:'34, 3rd-cross Toronto ,USA'}
+        {id          :'114091652',   name:'Tony',   email:'Tony@gmail.com',       ph_no:'44442222',
+        country_code :'134111', Lang_Pref:'English',  DOB:'11-2-1970',           Gender:'Male',IVR_pin_Sts:'valid',
+         Address     :'34, 3rd-cross Toronto ,USA'},
+ 
+        {id          :'114091653',   name:'James',   email:'James@gmail.com',     ph_no:'33331111',
+        country_code :'134222', Lang_Pref:'English',   DOB:'11-2-1970',          Gender:'Male',IVR_pin_Sts:'valid',
+        Address      :'34, 3rd-cross Toronto ,USA'}
           ]
         
         

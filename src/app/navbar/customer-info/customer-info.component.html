@@ -1,44 +1,51 @@
 
 <div class="main">
-    <div class="image">
-      <div class="pr_i" *ngIf=" customersInfo.name ===''">
-        <img src="./assets/navbar/customer-login/profile_i.svg" >
+      <div class="image">
+          <div class="pr_i" *ngIf=" customersInfo.name ===''">
+              <img src="./assets/navbar/customer-login/profile_i.svg" >
+          </div>
+          <div class="pr_i_auth" *ngIf=" customersInfo.name !==''">
+              <span>{{customersInfo.name.charAt(0)}}{{customersInfo.name.charAt(1)}}</span>
+          </div>
       </div>
-      <div class="pr_i_auth" *ngIf=" customersInfo.name !==''">
-        <span  >{{customersInfo.name.charAt(0)}}{{customersInfo.name.charAt(1)}}</span>
-      </div>
-    </div>
-      <div class="customername">
-        <h5 style=" font-weight:bold; color:#475258;" id="head"> 
-          <span *ngIf=" customersInfo.name ===''">Customer Name</span>{{customersInfo.name}} </h5>
-      </div>
-  <div class="info">
-      <div id="cs"> 
-        <span *ngIf=" customersInfo.name ===''">Customer Status </span>
-        {{customersInfo.id}}
-      </div>
-      <div id="auth_s">
-        <span *ngIf=" customersInfo.name ===''">Authentication Status </span>
-        <img src="./assets/navbar/customer-info/auth.svg" alt="" *ngIf=" customersInfo.name !==''"></div>
-      <div id="mobile">
-        <img src="./assets/navbar/customer-login/phone_o.png" >&nbsp;&nbsp;
-        <span *ngIf=" customersInfo.name ===''"> Mobile Number</span>
-        {{customersInfo.ph_no}}
-        </div>
-      <div id="email">
-        <img src="./assets/navbar/customer-login/email.svg" > &nbsp;&nbsp; 
-        <span *ngIf=" customersInfo.name ===''">Customer Email</span>
-       {{customersInfo .email}}
-      </div>
-      <div id="country">
-        <img src="./assets/navbar/customer-login/mis_c.svg" >&nbsp;&nbsp;
-        <span *ngIf=" customersInfo.name ===''">Country Code </span>
-        {{customersInfo.country_code}}
-        <span *ngIf=" customersInfo.name !==''"><button class="viewbtn" >
-          <a routerLink="/viewmore" >View More</a> </button></span>
-        </div>
-        
-  </div>
+      <div class="right-info">
+            <div class="customername">
+                    <h5 style=" font-weight:bold; color:#475258;" id="head"> 
+                    <span *ngIf=" customersInfo.name ===''">Customer Name</span>{{customersInfo.name}} </h5>
+            </div>
+            <div class="info">
+                  <div id="cs"> 
+                        <span *ngIf=" customersInfo.name ===''">Customer Status </span>{{customersInfo.id}}
+                  </div>
 
+                  <div id="auth_s" class="padd">
+                        <span *ngIf=" customersInfo.name ===''" style="padding: 0px 15px 0px 20px;">Authentication Status </span>
+                        <img src="./assets/navbar/customer-info/auth.svg" alt="" *ngIf=" customersInfo.name !==''">
+                  </div>
+
+                  <div id="mobile" class="padd">
+                        <img src="./assets/navbar/customer-login/phone_o.png" >&nbsp;&nbsp;
+                        <span *ngIf=" customersInfo.name ===''"> Mobile Number</span>{{customersInfo.ph_no}}
+                  </div>
+
+                  <div id="email" class="padd">
+                        <img src="./assets/navbar/customer-login/email.svg" > &nbsp;&nbsp; 
+                        <span *ngIf=" customersInfo.name ===''">Customer Email</span>{{customersInfo .email}}
+                  </div>
+
+                  <div id="country" class="padd">
+                        <img src="./assets/navbar/customer-login/mis_c.svg" >&nbsp;&nbsp;
+                        <span *ngIf=" customersInfo.name ===''">Country Code </span>{{customersInfo.country_code}}
+                  </div>
+
+                  <div class="">
+                        <span *ngIf=" customersInfo.name !==''">
+                              <button class="viewbtn" >
+                                    <a routerLink="/viewmore" >View More</a> 
+                              </button>
+                        </span>
+                  </div>
+            </div>
+      </div>
 </div>
 

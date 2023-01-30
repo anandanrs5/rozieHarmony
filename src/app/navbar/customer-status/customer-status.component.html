@@ -1,20 +1,21 @@
 <div class="container">
-  <div class="child1">
-    <div class="image"><img src="./assets/statusbar/telephone.svg" >
-    </div>
-    <div class="language">
-      <select  name="status" class="lang" multiplesize>
-          <option ><button >ENG</button></option>
-          <option ><button >FRN</button></option>
-      </select>
-    </div>
-  </div>
-  <div class="child2">
-    <div class="username">{{userName}}</div>  
-    <div class="status">
-      <select [(ngModel)]="selected_data" class="login" (click)="selected()">
-          <option *ngFor="let s of status" [value]="s" >{{s}}</option>
-      </select>
-    </div>
-  </div>
+        <div class="child1">
+            <div class="image">
+                  <img src="./assets/statusbar/telephone.svg" >
+            </div>
+            <div class="language">
+                <select  name="status" class="lang" multiplesize>
+                    <option >EN </option>
+                    <option >FRN</option>
+                </select>
+            </div>
+        </div>
+        <div class="child2">
+            <div class="username">{{userName}}</div>  
+            <div class="status">
+                <select [(ngModel)]="selected_data" class="login" (click)="selected()">
+              <option *ngFor="let s of status" [value]="s" >{{s}}</option>
+                </select>
+            </div>
+        </div>
 </div>

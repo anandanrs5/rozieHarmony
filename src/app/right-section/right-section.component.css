@@ -3,6 +3,11 @@ nav ul li {
     list-style: none;
     padding: 10px;
 }
+.main{
+    width:586px;
+    height: 80vh;
+    border-right: 4px solid rgb(216, 218, 221);
+}
 li:hover{
     border-bottom: 5px solid #544ad8;
     color:#544ad8;
@@ -11,14 +16,13 @@ li:hover{
     float: right;
     border:1px solid rgba(222, 209, 235,0.4);
     width: 350px;
-    height: 76vh;
+    height: 79vh;
 }
-#fwd{
-    background-color: #544ad8;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
+.arrow-fr{
+    background-color:#423ab4;
+    padding: 7px;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 .des{
     background-color: rgb(235, 235, 245);
@@ -37,9 +41,4 @@ li:hover{
     width:150px;
     height: 12px;
     border-radius: 10px;
-}
-.main{
-    width:590px;
-    height: 77vh;
-    border:1px solid rgba(205, 178, 233,0.3);
 }

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LeftSectionComponent } from './left-section/left-section.component';
+import { CustomerInfoComponent } from './navbar/customer-info/customer-info.component';
 import { OverallProfileComponent } from './navbar/customer-info/overall-profile/overall-profile.component';
 import { ProfileFormComponent } from './navbar/customer-info/profile-form/profile-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path:'navbar' ,component:NavbarComponent},
   { path:'rightcomponent' ,component:RightSectionComponent},
   { path:'leftcomponent' ,component:LeftSectionComponent},
-  { path:'profileform' ,component:ProfileFormComponent},]
+  { path:'profileform' ,component:ProfileFormComponent},
+  { path:'customerinfo' ,component:CustomerInfoComponent},]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
