@@ -5,14 +5,14 @@
 section{
     position: relative;
     width:620px;
-    height: 79.5vh;
+    height: 79.9vh;
 }
 article{
     position: absolute;
     top:80px;
     left:70px;
     text-align: center;
-  }
+}
 .base{
     display: grid;
     grid-template-columns:minmax(10px ,auto) minmax(230px ,auto) minmax(100px ,auto) minmax(10px ,auto);
@@ -25,10 +25,15 @@ article{
 }
 .inp{
     border:none;
+    /* border: 2px solid rgb(241, 3, 3); */
+}
+.inp:focus{
+    outline: none;
 }
 input::placeholder{
     color: #8597ac;
     font-weight: 500;
+    padding-left: 10px;
 }
 .btn{
     padding: 4px;
@@ -52,4 +57,12 @@ p{
 }
 .search{
     margin-left: 10px;
+}
+.overall{
+    position: relative;
+    width:620px;
+    height: 79.9vh;
+    background-color: aqua;
+    bottom: 70px;
+    right: 30px;
 }

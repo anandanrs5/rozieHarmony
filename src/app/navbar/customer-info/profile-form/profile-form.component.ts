@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { MainserviceService } from 'src/app/mainservice.service';
 import { ProfileService } from 'src/app/profile.service';
 @Component({
@@ -8,7 +9,9 @@ import { ProfileService } from 'src/app/profile.service';
   styleUrls: ['./profile-form.component.css']
 })
 export class ProfileFormComponent implements OnInit {
-  constructor(private service :ProfileService) { }
+  constructor(private service :ProfileService ,private auth:MainserviceService,
+    private router:Router)
+   { }
   customerInformation!:FormGroup<any>;
   ngOnInit(): void {
     
@@ -56,5 +59,10 @@ export class ProfileFormComponent implements OnInit {
     // console.log(this.customerInformation.value.profile.firstname); 
       // console.log(this.customerInformation.value);
       this.service.saveDataInServive(this.customerInformation);
+  }
+  cancel(){
+    this.auth.profileFormAuth=false;
+    this.router.navigateByUrl('/viewmore')
+
   }
  }

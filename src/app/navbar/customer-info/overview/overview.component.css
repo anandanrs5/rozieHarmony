@@ -12,3 +12,7 @@
 .head_img img{
     margin: 10px 15px 10px 15px;
 }
+button{
+    border: none;
+    background-color: white;
+}

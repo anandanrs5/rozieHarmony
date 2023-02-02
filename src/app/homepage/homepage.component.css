@@ -33,3 +33,24 @@
 .info{
     border: 1px solid red;
 }
+.app-overall{
+    width: 700px;
+    position: absolute;
+    top:132px;    
+    display: flex;
+    border-left: 4px solid rgb(216, 218, 221);
+    border-right: 4px solid #d9d9f9 ;
+    overflow: scroll;
+    height: 79.9vh;
+}
+.app-profile-form{
+    width: 700px;
+    position: absolute;
+    top:132px;    
+    display: flex;
+    border-left: 4px solid rgb(216, 218, 221);
+    border-right: 4px solid #d9d9f9 ;
+    overflow: scroll;
+    height: 79.9vh;
+
+}

@@ -4,9 +4,29 @@
     </div>
     <div class="container-down">
         <!-- <app-overall-profile class="overall" ></app-overall-profile> -->
-        <app-navbar class="navbar"></app-navbar>
-        <app-left-section  class="left-section"></app-left-section> 
-        <app-right-section class="right-section"></app-right-section>
+        <div class=""> 
+            <app-navbar class="navbar"></app-navbar>
+        </div>
+        <div > 
+            <ng-container *ngIf="this.service.authenticated;then Authenticate ;else notAuthenticate"> 
+            </ng-container>
+            <ng-template #notAuthenticate>
+                <app-left-section  class="left-section"></app-left-section> 
+             </ng-template>
+            <ng-template  #Authenticate>
+                <app-overall-profile class="app-overall"></app-overall-profile>
+            </ng-template>
+            <ng-container *ngIf="this.service.profileFormAuth; then authProfile"> 
+            </ng-container>
+           <ng-template #authProfile>
+                <app-profile-form class="app-profile-form"></app-profile-form>
+            </ng-template>
+        </div>
+        <div class="">
+            <app-right-section class="right-section"></app-right-section>
+        </div>
+       
+
         <!-- <app-profile-form></app-profile-form> -->
     </div>
 </div>

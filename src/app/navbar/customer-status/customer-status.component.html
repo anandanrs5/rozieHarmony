@@ -14,7 +14,7 @@
             <div class="username">{{userName}}</div>  
             <div class="status">
                 <select [(ngModel)]="selected_data" class="login" (click)="selected()">
-              <option *ngFor="let s of status" [value]="s" >{{s}}</option>
+                    <option *ngFor="let s of status" [value]="s" >{{s}}</option>
                 </select>
             </div>
         </div>

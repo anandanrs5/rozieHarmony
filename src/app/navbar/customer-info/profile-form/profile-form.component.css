@@ -19,10 +19,12 @@
     padding: 2px;
     background-color:blue;
     width: 60px;
+    color: white;
 }
 .btn-cancel{
     background-color: rgb(170, 170, 187);
     margin: 30px 10px 0px 10px;
+    
 }
 .container-profile,.container-phone,.container-address,.container-Rep{
     background-color:#f5f7fa;

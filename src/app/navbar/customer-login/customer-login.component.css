@@ -14,6 +14,7 @@
     border:1px solid  #c6c3e7;
     width:250px;
     margin: 0px 10px 0px 0px;
+    outline: none;
   }
 .retr,.send{
     padding: 7px;

@@ -1,27 +1,27 @@
 <div class="main">
        <app-overview class="overview"></app-overview>
-        <div class="profile-container">
-            <div class="title">
-            <div class=""><img src="./assets/navbar/customer-info/profile.svg" class="">&nbsp;</div>
-            <div class=""><span >Profile</span></div>
-            </div>
-            <div class="information" >
-                <p *ngFor="let l of Arr">  profileDetails   : <br> {{l.firstname}}</p>
-                <p>Aeroplan Number  : <br>{{customerInfo.id}}</p>
-                <p>Mobile Number    : <br>{{profileDetails.phone.mobilenumber}}</p>
-                <p>Language Preference :<br>{{profileDetails.profile.language}}</p>
-                <p>Home Number      : <br> {{profileDetails.phone.homenumber}}</p>
-                <p style="border: none;">Business Number  : </p>
-                <p>Date of Birth    : <br>{{profileDetails.profile.dob}}</p>
-                <p>Gender           : <br>{{profileDetails.profile.Gender}}</p>
-                <p>IVR PIn Status   : <br>{{profileDetails.profile.ivr_pin_status}}</p>
-                <p  style="border: none;">Address          : <br>{{profileDetails.address}}</p>
-            </div>
-        </div>
-        <div class="member-container">
+         <div class="profile-container">
+                <div class="title">
+                    <div class=""><img src="./assets/navbar/customer-info/profile.svg" class="">&nbsp;</div>
+                    <div class=""><span >Profile</span></div>
+                </div>
+                <div class="information" >
+                        <!-- <p>  profileDetails   : <br> {{profileDetails.phone.firstname}}</p> -->
+                        <p>Aeroplan Number  : <br>{{customerInfo.id}}</p>
+                        <p>Mobile Number    : <br>{{profileDetails.phone.mobilenumber}}</p>
+                        <p>Language Preference :<br>{{profileDetails.profile.language}}</p>
+                        <p>Home Number      : <br> {{profileDetails.phone.homenumber}}</p>
+                        <p style="border: none;">Business Number  : </p>
+                        <p>Date of Birth    : <br>{{profileDetails.profile.dob}}</p>
+                        <p>Gender           : <br>{{profileDetails.profile.Gender}}</p>
+                        <p>IVR PIn Status   : <br>{{profileDetails.profile.ivr_pin_status}}</p>
+                        <p  style="border: none;">Address          : <br>{{profileDetails.address}}</p>
+                </div>
+         </div>
+         <div class="member-container">
            <div class="title">
-            <div class=""><img src="./assets/navbar/customer-info/memsts.svg" class="">&nbsp;</div>
-            <div class=""><span>Member StatusA</span></div>
+                <div class=""><img src="./assets/navbar/customer-info/memsts.svg" class="">&nbsp;</div>
+                <div class=""><span>Member StatusA</span></div>
            </div> 
            <div class="information">
                 <p>Membership    : <br>{{"Active"}}</p>
@@ -30,11 +30,11 @@
                 <p>Million Miles : <br>{{"No"}}</p>
                 <p  style="border: none;">Tier  : <br> E35K</p>
            </div>
-        </div>
-        <div class="fs-container">
+         </div>
+         <div class="fs-container">
             <div class="title">
-             <div class=""><img src="./assets/navbar/customer-info/memsts.svg" class="">&nbsp;</div>
-             <div class=""><span>Family Sharing</span></div>
+                <div class=""><img src="./assets/navbar/customer-info/memsts.svg" class="">&nbsp;</div>
+                <div class=""><span>Family Sharing</span></div>
             </div> 
             <div class="information">
                  <p>Role          : <br>{{"Not Applicable"}}</p>
@@ -44,44 +44,44 @@
             </div>
          </div>
          <div class="credit-container">
-            <div class="title">
-                <div class=""><img src="./assets/navbar/customer-info/credit.svg" class="">&nbsp;</div>
-             <div class="">Credit Card</div>
-            </div> 
-            <div class="information">
-                <img src="./assets/navbar/customer-info/TD.svg" class="">
-                <img src="./assets/navbar/customer-info/CIBC.svg" class="">
-                <img src="./assets/navbar/customer-info/amex.svg" class="">
-                <img src="./assets/navbar/customer-info/chase.svg" class="">
-            </div>
+                <div class="title">
+                    <div class=""><img src="./assets/navbar/customer-info/credit.svg" class="">&nbsp;</div>
+                    <div class="">Credit Card</div>
+                </div> 
+                <div class="information">
+                    <img src="./assets/navbar/customer-info/TD.svg" class="">
+                    <img src="./assets/navbar/customer-info/CIBC.svg" class="">
+                    <img src="./assets/navbar/customer-info/amex.svg" class="">
+                    <img src="./assets/navbar/customer-info/chase.svg" class="">
+                </div>
          </div>
          <div class="balance-container">
             <div class="title">
                 <div class=""><img src="./assets/navbar/customer-info/balance.svg" class="">&nbsp;</div>
                 <div class="">Balance</div>
             </div> 
-                <div class="information">
-                    <p>Redeem Points  : <br>{{"0"}}</p>
-                    <p>Total SQM      : <br>{{"0"}}</p>
-                    <p>Total SQD      : <br>{{"5000"}}</p>
-                    <p>Total SQs      : <br>{{"0"}}</p>
-                    <p  style="border: none;">Total EDQ      : <br>{{"0"}}</p>
-                    <p>Pool Balance   : <br>{{"0"}}</p>
-                    <p  style="border: none;">Points Expiring In :<br>{{"-"}}</p>
-               </div>
+            <div class="information">
+                <p>Redeem Points  : <br>{{"0"}}</p>
+                <p>Total SQM      : <br>{{"0"}}</p>
+                <p>Total SQD      : <br>{{"5000"}}</p>
+                <p>Total SQs      : <br>{{"0"}}</p>
+                <p  style="border: none;">Total EDQ      : <br>{{"0"}}</p>
+                <p>Pool Balance   : <br>{{"0"}}</p>
+                <p  style="border: none;">Points Expiring In :<br>{{"-"}}</p>
+            </div>
          </div>
          <div class="repres-container">
             <div class="title">
                 <div class=""><img src="./assets/navbar/customer-info/balance.svg" class="">&nbsp;</div>
                 <div class="">Representatives</div>
             </div> 
-                <div class="information">
-                    <p>Representative 1   : <br>{{"MRS Test IBE Test"}}</p>
-                    <p>Representative 2   : <br>{{"Test2 Test"}}</p>
-                    <p>Representative 3   : <br>{{"5000"}}</p>
-                    <p>Representative 4   : <br>{{"0"}}</p>
-                    <p  style="border: none;">Representative 5   : <br>{{"0"}}</p>
-                    <p  style="border: none;">Secret Passphrase  : <br>{{"Summer is not here"}}</p>
-               </div>
+            <div class="information">
+                <p>Representative 1   : <br>{{"MRS Test IBE Test"}}</p>
+                <p>Representative 2   : <br>{{"Test2 Test"}}</p>
+                <p>Representative 3   : <br>{{"5000"}}</p>
+                <p>Representative 4   : <br>{{"0"}}</p>
+                <p  style="border: none;">Representative 5   : <br>{{"0"}}</p>
+                <p  style="border: none;">Secret Passphrase  : <br>{{"Summer is not here"}}</p>
+            </div>
          </div>      
 </div>

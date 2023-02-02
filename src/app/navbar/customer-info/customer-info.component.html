@@ -18,17 +18,17 @@
                         <span *ngIf=" customersInfo.name ===''">Customer Status </span>{{customersInfo.id}}
                   </div>
 
-                  <div id="auth_s" class="padd">
+                  <div id="auth_s"  class="padd">
                         <span *ngIf=" customersInfo.name ===''" style="padding: 0px 15px 0px 20px;">Authentication Status </span>
                         <img src="./assets/navbar/customer-info/auth.svg" alt="" *ngIf=" customersInfo.name !==''">
                   </div>
 
-                  <div id="mobile" class="padd">
+                  <div id="mobile"  class="padd">
                         <img src="./assets/navbar/customer-login/phone_o.png" >&nbsp;&nbsp;
                         <span *ngIf=" customersInfo.name ===''"> Mobile Number</span>{{customersInfo.ph_no}}
                   </div>
 
-                  <div id="email" class="padd">
+                  <div id="email"   class="padd">
                         <img src="./assets/navbar/customer-login/email.svg" > &nbsp;&nbsp; 
                         <span *ngIf=" customersInfo.name ===''">Customer Email</span>{{customersInfo .email}}
                   </div>
@@ -40,9 +40,12 @@
 
                   <div class="">
                         <span *ngIf=" customersInfo.name !==''">
-                              <button class="viewbtn" >
-                                    <a routerLink="/viewmore" >View More</a> 
-                              </button>
+                              <div class="" *ngIf="hide">
+                                    <button class="viewbtn" (click)="view()"><a>View More</a> </button>
+                              </div>
+                              <div class="" *ngIf="hide===false">
+                                    <button class="viewbtn" (click)="viewless()"><a>View Less</a> </button>
+                              </div>
                         </span>
                   </div>
             </div>

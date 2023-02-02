@@ -37,3 +37,7 @@ select{
     margin-right: 10px;
 
 }
+.lang:focus , .login:focus{
+    outline: none;
+    border: 1px solid white;
+}

@@ -12,6 +12,10 @@ export class OverviewComponent implements OnInit {
 
   ngOnInit(): void {
   }
- 
+ profile(){
+  this.service.profileFormAuth=true;
+  console.log("success"+this.service.profileFormAuth);
+  // this.service.authenticated=false;
+ }
 
 }
